@@ -1,9 +1,75 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>Cam Guay</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+  <head>
+    <title>CSS Cheat Sheet</title>
+    <link href='/styles.css' type='text/css' rel='stylesheet'>
+  </head>
+  <body>
+    <h1>CSS Cheat Sheet</h1>
+    <h2>by Cameron Guay</h2>
+    <div class='first_step'>
+    <h3>Step One is to Link</h3>
+    <p>To link your css file to the html file, use &lt;link href='.styles.css' type='text/css' rel='stylesheet'&gt; </p>
+    </div>
+    <div class='css_selectors'>
+      <h3>CSS Selectors</h3>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Tag</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Type Selector</td>
+            <td> <span class='code'> h1{}</span> </td>
+            <td>These select an HTML element.</td></tr>
+          <tr>
+            <td>Universal Selector</td>
+            <td><span class='code'>*{}</span></td>
+            <td>This is used to select all elements.</td></tr>
+          <tr>
+            <td>Class Selector</td>
+            <td><span class='code'>.box{}</span></td>
+            <td>This is used, combined with a period, to select class elements.</td></tr>
+          <tr>
+            <td>id Selector</td>
+            <td><span class='code'>#unique</span></td>
+            <td>This is used, combined with a '#', to select id elements.</td></tr>
+          <tr>
+            <td>Attribute Selector</td>
+            <td><span class='code'>a[title]{}</span></td>
+            <td>This selects attributes based on a given definition.</td></tr>
+          <tr>
+            <td>Pseudo-class Selector</td>
+            <td><span class='code'>p:first-child{}</span></td>
+            <td>This selects elements during certain circumstances.</td></tr>
+          <tr>
+            <td>Pseudo-element Selector</td>
+            <td><span class='code'>p::first-line{}</span></td>
+            <td>This selects a specific part of an element.</td></tr>
+          <tr>
+            <td>Descendant Combinator</td>
+            <td><span class='code'>article p</span></td>
+            <td>This will only select an element when the first selector is the parent of the second selector.</td></tr>
+          <tr>
+            <td>Child Combinator</td>
+            <td><span class='code'>article &gt; p</span></td>
+            <td>This works similar to Descendant, however the second selector <span class='bold'>must</span> be the direct child.</td></tr>
+          <tr>
+            <td>Adjacent Sibling Combinator</td>
+            <td><span class='code'>h1+p</span></td>
+            <td>This selects the second selector when both selectors have the same parent and the second selector is <span class='bold'>immediately</span> following the first selector.</td></tr>
+          <tr>
+            <td>General Sibling Combinator</td>
+            <td><span class='code'>h1~p</span></td>
+            <td>This selects the second selector when both selectors have the same parent. Doesn't need to immediatly follow first selector.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+    </div>
+  </body>
 </html>
